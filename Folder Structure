@@ -1,0 +1,17 @@
+/Alpha-Omni-Hyperliquid
+├── config.json             # Strategy parameters, risk settings, scanning interval
+├── .env                    # SENSITIVE: Private Key, Wallet Address, API Secret
+├── main.py                 # Core Engine & Async Loop
+├── requirements.txt        # Dependencies (hyperliquid-python-sdk, pandas, etc.)
+├── .gitignore              # Menghindari upload .env dan config.json ke publik
+├── /modules
+│   ├── config_loader.py    # Merging config.json & .env data
+│   ├── connection.py       # Hyperliquid SDK Info & Exchange init
+│   ├── technicals.py       # TA-Lib/Pandas: RSI, EMA, Bollinger Bands
+│   ├── smc.py              # Smart Money Concepts: Order Blocks & Break of Structure
+│   ├── quant.py            # Funding rates, Open Interest, & Liquidations data
+│   ├── execution.py        # Order placement (Market/Limit), SL/TP management
+│   └── telegram_bot.py     # Real-time monitoring & Alerting via Telegram
+└── /deploy
+    ├── alpha_omni.service  # Systemd service (Linux VPS)
+    └── update_bot.sh       # Script untuk pull dari Git & restart
