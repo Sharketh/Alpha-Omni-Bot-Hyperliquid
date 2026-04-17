@@ -33,6 +33,7 @@ Alpha-Omni-Bot-Hyperliquid/
 └── /deploy
     ├── bot.service         # Systemd unit file untuk VPS
     └── restart_bot.sh      # Script otomasi restart
+
 🛠 Instalasi & Persiapan
 1. Prasyarat
 Python 3.10+
@@ -43,7 +44,7 @@ Hyperliquid Wallet (Disarankan menggunakan API Wallet/Signing Wallet)
 
 2. Kloning Repositori
 Bash
-git clone https://github.com/username/Alpha-Omni-Bot-Hyperliquid.git
+git clone https://github.com/Sharketh/Alpha-Omni-Bot-Hyperliquid.git
 cd Alpha-Omni-Bot-Hyperliquid
 3. Instal Dependensi
 Bash
