@@ -13,7 +13,7 @@ ExecStart=/usr/bin/python3 main.py
 
 # Pengaturan Restart Otomatis
 Restart=always
-RestartSec=10
+RestartSec=5
 
 # Environment Variables
 Environment="BOT_ENV=production"
