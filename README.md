@@ -46,9 +46,11 @@ Hyperliquid Wallet (Disarankan menggunakan API Wallet/Signing Wallet)
 Bash
 git clone https://github.com/Sharketh/Alpha-Omni-Bot-Hyperliquid.git
 cd Alpha-Omni-Bot-Hyperliquid
+
 3. Instal Dependensi
 Bash
 pip install -r requirements.txt
+
 4. Konfigurasi Lingkungan
 Buat file .env di direktori utama:
 
@@ -63,15 +65,16 @@ Mode Pengembangan:
 
 Bash
 python main.py
+
 Mode Produksi (Linux VPS):
 
 Salin file service: cp deploy/bot.service /etc/systemd/system/
-
 Aktifkan service:
 
 Bash
 systemctl enable bot.service
 systemctl start bot.service
+
 📊 Strategi Alpha-Omni
 Bot ini bekerja dengan alur Filter-Score-Execute:
 
