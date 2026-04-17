@@ -1,0 +1,37 @@
+{
+    "api": {
+        "hyperliquid_address": "0xYourWalletAddressHere",
+        "hyperliquid_secret": "YourSecretKeyHere",
+        "discord_webhook": "https://discord.com/api/webhooks/...",
+        "discord_dashboard_webhook": "https://discord.com/api/webhooks/..."
+    },
+    "database": {
+        "host": "localhost",
+        "name": "alpha_omni_db",
+        "user": "postgres",
+        "password": "your_db_password",
+        "port": 5432
+    },
+    "system": {
+        "timezone": "Asia/Jakarta",
+        "test_mode": true,
+        "min_score_threshold": 7,
+        "log_level": "INFO"
+    },
+    "patterns": {
+        "tolerance": 0.015,
+        "ascending_triangle": true,
+        "descending_triangle": true,
+        "double_bottom": true,
+        "double_top": true,
+        "bull_flag": true,
+        "bullish_rectangle": true
+    },
+    "trading": {
+        "symbols": ["BTC/USDC", "ETH/USDC", "SOL/USDC"],
+        "timeframe": "15m",
+        "leverage": 10,
+        "risk_per_trade_percent": 1.0,
+        "min_rvol": 2.0
+    }
+}
