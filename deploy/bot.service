@@ -1,0 +1,23 @@
+[Unit]
+Description=Alpha-Omni Hyperliquid Bot
+# Memastikan bot hanya jalan setelah jaringan dan database PostgreSQL siap
+After=network.target postgresql.service
+
+[Service]
+# Ganti 'root' dengan username Linux kamu jika bukan menggunakan root
+User=root
+# Lokasi folder proyek di server (sesuaikan jika folder kamu berbeda)
+WorkingDirectory=/root/Alpha-Omni-Bot-Hyperliquid
+# Path ke interpreter Python (disarankan menggunakan Virtual Environment)
+ExecStart=/usr/bin/python3 main.py
+
+# Pengaturan Restart Otomatis
+Restart=always
+RestartSec=10
+
+# Environment Variables
+Environment="BOT_ENV=production"
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
