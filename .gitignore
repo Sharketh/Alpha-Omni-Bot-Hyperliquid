@@ -1,0 +1,4 @@
+.env
+config.json
+bot_env/*
+*__pycache__/*
