@@ -43,35 +43,46 @@ PostgreSQL Database
 Hyperliquid Wallet (Disarankan menggunakan API Wallet/Signing Wallet)
 
 2. Kloning Repositori
+
 Bash
+
 git clone https://github.com/Sharketh/Alpha-Omni-Bot-Hyperliquid.git
 cd Alpha-Omni-Bot-Hyperliquid
 
 3. Instal Dependensi
+
 Bash
+
 pip install -r requirements.txt
 
 4. Konfigurasi Lingkungan
+
 Buat file .env di direktori utama:
 
 Cuplikan kode
+
 HL_ACCOUNT_ADDRESS=0xAlamatWalletAnda
 HL_PRIVATE_KEY=0xPrivateKeyAnda
 DB_PASSWORD=PasswordPostgresAnda
+
 Sesuaikan parameter strategi di config.json terutama bagian discord_webhook dan trading_params.
 
 🚀 Menjalankan Bot
 Mode Pengembangan:
 
 Bash
+
 python main.py
 
 Mode Produksi (Linux VPS):
 
-Salin file service: cp deploy/bot.service /etc/systemd/system/
+Salin file service: 
+cp deploy/bot.service /etc/systemd/system/
+
 Aktifkan service:
 
 Bash
+
 systemctl enable bot.service
 systemctl start bot.service
 
